@@ -1,12 +1,9 @@
 import React, { useEffect } from 'react';
 import { Button } from '../Button/Button';
+import { useTelegram } from '../../hooks/useTelegram';
 
 export const Header = () => {
-  const tg = window.Telegram.WebApp;
-
-  useEffect(() => {
-    tg.ready();
-  }, []);
+  const { tg } = useTelegram();
 
   function clickHandler() {
     tg.close();
