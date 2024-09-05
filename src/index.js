@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ProductList } from './components/ProductList/ProductList';
 
 import App from './App';
@@ -8,7 +8,7 @@ import { Form } from './components/Form/Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
