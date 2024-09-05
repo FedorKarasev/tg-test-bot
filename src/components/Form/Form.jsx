@@ -18,9 +18,9 @@ export const Form = () => {
 
   useEffect(() => {
     if (!city || !street || !country) {
-      tg.MainButton.setParams({ is_visible: false });
+      tg.MainButton.hide();
     } else {
-      tg.MainButton.setParams({ is_visible: false });
+      tg.MainButton.show();
     }
   }, [country, city, street]);
 
